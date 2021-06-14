@@ -16,12 +16,11 @@ export default function App() {
       <Text style={styles.text}>Inside</Text>
     </ImageBackground>
   </View>
-);
-    
 
-     
-    
-  }
+
+
+);
+}
 
 const styles = StyleSheet.create({
    container: {

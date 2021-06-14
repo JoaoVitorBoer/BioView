@@ -3,7 +3,8 @@ import React from 'react';
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
 import { style } from '@material-ui/system';
 
-const image = {uri: 'icon.png' }
+
+const image = require('./Images/homepage.png');
 
 
 
@@ -11,7 +12,7 @@ export default function App() {
   return (
      
   <View style={styles.container}>
-    <ImageBackground source={require('')} style={styles.image}>
+    <ImageBackground source={ image } style={styles.image}>
       <Text style={styles.text}>Inside</Text>
     </ImageBackground>
   </View>
@@ -33,6 +34,7 @@ const styles = StyleSheet.create({
     resizeMode: "cover",
     justifyContent: "center"
     },
+
     text: {
       color: "white",
       fontSize: 42,

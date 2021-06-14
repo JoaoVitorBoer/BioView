@@ -1,22 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import ScrollableTabsButtonAuto from './Scroll';
+import { Button } from '@material-ui/core';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <ScrollableTabsButtonAuto>
-
-      </ScrollableTabsButtonAuto>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+    <Image source={require( 'C:\Users\Gamer\BioView\assets\img\HomePage.png ' )}>
+     <View style={styles.container}>
+      
+      
+      
+     </View>
+    </Image>
+    
+  )}
 
 const styles = StyleSheet.create({
  
-  
       
 });
 

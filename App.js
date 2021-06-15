@@ -1,7 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { ImageBackground, StyleSheet, Text, View } from "react-native";
-import { style } from '@material-ui/system';
+import { ImageBackground, StyleSheet, View } from "react-native";
+import { Button } from 'react-native-paper';
+
 
 
 const image = require('./Images/homepage.png');
@@ -12,15 +12,24 @@ export default function App() {
   return (
      
   <View style={styles.container}>
-    <ImageBackground source={ image } style={styles.image}>
+    <ImageBackground source={ image } style={styles.image}> 
+    <Button icon='camera' mode='contained' onPress={()=>{}} >
       
+    </Button>
+    
     </ImageBackground>
   </View>
-
-
-
+         
 );
 }
+
+
+
+
+
+
+
+
 
 
 

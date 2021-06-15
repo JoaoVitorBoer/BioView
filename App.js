@@ -1,32 +1,25 @@
 import React from 'react';
 import { ImageBackground, StyleSheet, View } from "react-native";
-import { Button } from 'react-native-paper';
-
+import Cards from './screens/card';
 
 
 const image = require('./Images/homepage.png');
 
 
-
 export default function App() {
   return (
      
+ <ImageBackground source={ image } style={styles.image}>
   <View style={styles.container}>
-    <ImageBackground source={ image } style={styles.image}> 
-    <Button icon='camera' mode='contained' onPress={()=>{}} >
+    <Cards>  
       
-    </Button>
-    
-    </ImageBackground>
+      
+      
+    </Cards>
   </View>
-         
+</ImageBackground>
 );
 }
-
-
-
-
-
 
 
 

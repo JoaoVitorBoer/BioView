@@ -1,8 +1,8 @@
 import React from 'react';
-import {ImageBackground, View, Image, TouchableOpacity} from "react-native";
+import {ImageBackground, View} from "react-native";
 import {css} from '../assets/css/Css'
 
-const image = require('../assets/img/Homepage.png');
+const image = require("../assets/Img/Homepage.png")
 
 export default function Home(){
     return(

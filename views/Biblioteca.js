@@ -4,7 +4,7 @@ import { css } from '../assets/css/Css';
 
 
 
-const image = require('../assets/img/Homepage.png');
+const image = require('../assets/Img/Homepage.png');
 
 export default function Biblioteca(){
 

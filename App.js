@@ -1,32 +1,52 @@
 import React from 'react';
-import {ImageBackground} from "react-native";
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { Home, Biblioteca } from './views';
+import { ImageBackground, StyleSheet, View } from "react-native";
+import Cards from './screens/card';
+
+
+const image = require('./Images/homepage.png');
 
 
 export default function App() {
-
-  const Stack = createStackNavigator();
   return (
-    
-    <NavigationContainer>
-    
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home}  />
-      <Stack.Screen name="Biblioteca" component={Biblioteca} />
-    </Stack.Navigator>
-    
-  </NavigationContainer>
-
-
-
+     
+ <ImageBackground source={ image } style={styles.image}>
+  <View style={styles.container}>
+    <Cards>  
+      
+      
+      
+    </Cards>
+  </View>
+</ImageBackground>
 );
 }
 
 
 
 
+
+
+
+
+
+
+
+
+const styles = StyleSheet.create({
+   container: {
+     flex: 1,
+     flexDirection: "column"
+   },
+   
+   image: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center"
+    
+    },
+
+         
+});
 
 
 

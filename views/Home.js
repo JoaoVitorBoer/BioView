@@ -9,14 +9,7 @@ export default function Home(){
         
     <View style={css.viewback}> 
         <ImageBackground source={ image } style={css.background}>
-          <View style={css.container}>
-           
-         
-           <TouchableOpacity onPress={()=> navigation.navigate('Biblioteca')}>
-                    <Image source={require('../assets/img/qr-code.png')}/>
-           </TouchableOpacity>
-           
-          </View>
+          
         </ImageBackground>
     </View>
     );

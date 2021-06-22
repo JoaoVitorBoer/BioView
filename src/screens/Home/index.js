@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, ImageBackground, StyleSheet } from 'react-native';
 import Header from './header';
+import Mamada from '../components/list';
 
 
 
@@ -9,14 +10,19 @@ const image = require('./Homepage.png');
 
 export default function Home(){
     return (
+
     
  <ImageBackground source={ image } style={style.background}>
+    <Mamada> 
    <View style={style.viewback}>    
     <Header> 
+        
                         
     </Header>
   </View>
- </ImageBackground>
+  </Mamada>
+</ImageBackground>
+ 
 
    
     );

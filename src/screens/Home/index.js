@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, ImageBackground, StyleSheet } from 'react-native';
 import Header from './header';
-
+import Wallet from '../../Wallet';
 
 
 
@@ -12,7 +12,9 @@ export default function Home(){
     
  <ImageBackground source={ image } style={style.background}>
    <View style={style.viewback}>    
-    <Header>                  
+    <Header> 
+        <Wallet>
+        </Wallet>                 
     </Header>
   </View>
  </ImageBackground>

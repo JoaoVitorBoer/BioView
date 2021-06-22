@@ -1,5 +1,6 @@
 import React from "react";
-import { Animated, Dimensions, StyleSheet, View } from "react-native";
+import { Animated, Dimensions, StyleSheet, View } from 'react-native';
+
 import Card, {
   Cards,
   CARD_HEIGHT as DEFAULT_CARD_HEIGHT,

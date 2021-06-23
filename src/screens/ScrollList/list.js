@@ -10,6 +10,7 @@
    View,
    StyleSheet,
    SafeAreaView,
+   ImageBackground,
  } from 'react-native';
  import {
    State,
@@ -74,11 +75,11 @@
    },
  ];
  
- const OVERFLOW_HEIGHT = 100;
+ const OVERFLOW_HEIGHT = 120;
  const SPACING = 40;
- const VISIBLE_ITEMS = 3;
+ const VISIBLE_ITEMS = 4;
  const ITEM_WIDTH = width * 0.6;
- const ITEM_HEIGHT = ITEM_WIDTH * 1.7;
+ const ITEM_HEIGHT = ITEM_WIDTH * 1.5;
  
  const OverflowItems = ({ scrollX, data }) => {
    const translateY = scrollX.interpolate({
@@ -86,6 +87,7 @@
      outputRange: [OVERFLOW_HEIGHT, 0, -OVERFLOW_HEIGHT],
    });
    return (
+    
      <View style={{ height: OVERFLOW_HEIGHT, overflow: 'hidden' }}>
        <Animated.View style={{ transform: [{ translateY }] }}>
          {data.map((item, index) => {
@@ -111,10 +113,11 @@
          })}
        </Animated.View>
      </View>
+    
    );
  };
  
- export default function Mamada() {
+ export default function List() {
    const scrollX = React.useRef(new Animated.Value(0)).current;
    const scrollXAnimated = React.useRef(new Animated.Value(0)).current;
    const [index, setIndex] = React.useState(0);
@@ -143,6 +146,8 @@
    // }, [index]);
  
    return (
+    <View style={styles.viewback}>
+<ImageBackground source={ image } style={styles.background}>
      <FlingGestureHandler
        direction={Directions.LEFT}
        onHandlerStateChange={(e) => {
@@ -235,14 +240,19 @@
          </SafeAreaView>
        </FlingGestureHandler>
      </FlingGestureHandler>
+     </ImageBackground>
+     </View>
+
    );
  }
  
+ const image = require('../Home/Homepage.png')
+
  const styles = StyleSheet.create({
    container: {
      flex: 1,
      justifyContent: 'center',
-     backgroundColor: '#fff',
+     
    },
    title: {
      fontSize: 28,
@@ -265,5 +275,24 @@
      justifyContent: 'space-between',
      alignItems: 'center',
    },
+
+   viewback:{
+
+    flex: 1,
+    flexDirection: "column",
+    marginBottom: 1
+
+
+},
+
+background: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center",
+    
+    
+
+},
+
  });
  

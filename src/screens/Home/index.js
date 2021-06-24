@@ -12,15 +12,13 @@ const image = require('./Homepage.png');
 export default function Home(){
     return (
 
-    <List>  
- <Header> 
- <View style={style.viewback}> 
-   <ImageBackground source={ image } style={style.background}>
-   
-    </ImageBackground>  
-   </View>
-  </Header>
-  </List>  
+<List>  
+  <View style={style.viewback}> 
+     <ImageBackground source={ image } style={style.background}>
+       
+     </ImageBackground>  
+  </View>
+</List>  
   
   
 

@@ -18,66 +18,55 @@
    Directions,
  } from 'react-native-gesture-handler';
 
+ import Header from '../Home/header';
+
+ 
+
  
     
  const { width } = Dimensions.get('screen');
  import { EvilIcons } from '@expo/vector-icons';
  
  const DATA = [
+ 
+   
+     
    {
-     title: 'Afro vibes',
-     location: 'Mumbai, India',
-     date: 'Nov 17th, 2020',
+     title: 'Árvores',
+     location:'Campus PUCRS',
+     
      poster:
-       'Animal.png',
+     'https://cdn.discordapp.com/attachments/757716647627849898/857699754007986236/unknown.png', //Arvore
+     
    },
    {
-     title: 'Jungle Party',
-     location: 'Unknown',
-     date: 'Sept 3rd, 2020',
+     title: 'Plantas',
+     location: 'Campus PUCRS',
+     
      poster:
-       'https://www.creative-flyers.com/wp-content/uploads/2019/11/Jungle-Party-Flyer-Template-1.jpg',
+     'https://cdn.discordapp.com/attachments/757716647627849898/857700055913988157/unknown.png', //Planta
    },
    {
-     title: '4th Of July',
-     location: 'New York, USA',
-     date: 'Oct 11th, 2020',
+     title: 'Animais',
+     location: 'Campus PUCRS',
+     
      poster:
-       'https://www.creative-flyers.com/wp-content/uploads/2020/06/4th-Of-July-Invitation.jpg',
+     'https://cdn.discordapp.com/attachments/757716647627849898/857699803633811456/unknown.png' , //Pássaro
    },
    {
-     title: 'Summer festival',
-     location: 'Bucharest, Romania',
-     date: 'Aug 17th, 2020',
+     title: 'Monumentos',
+     location: 'Campus PUCRS',
+     
      poster:
-       'https://www.creative-flyers.com/wp-content/uploads/2020/07/Summer-Music-Festival-Poster.jpg',
+     'https://cdn.discordapp.com/attachments/757716647627849898/857702060999966730/unknown.png',
+     
    },
-   {
-     title: 'BBQ with friends',
-     location: 'Prague, Czech Republic',
-     date: 'Sept 11th, 2020',
-     poster:
-       'https://www.creative-flyers.com/wp-content/uploads/2020/06/BBQ-Flyer-Psd-Template.jpg',
-   },
-   {
-     title: 'Festival music',
-     location: 'Berlin, Germany',
-     date: 'Apr 21th, 2021',
-     poster:
-       'https://www.creative-flyers.com/wp-content/uploads/2020/06/Festival-Music-PSD-Template.jpg',
-   },
-   {
-     title: 'Beach House',
-     location: 'Liboa, Portugal',
-     date: 'Aug 12th, 2020',
-     poster:
-       'https://www.creative-flyers.com/wp-content/uploads/2020/06/Summer-Beach-House-Flyer.jpg',
-   },
+   
  ];
  
  const OVERFLOW_HEIGHT = 120;
  const SPACING = 40;
- const VISIBLE_ITEMS = 4;
+ const VISIBLE_ITEMS = 2;
  const ITEM_WIDTH = width * 0.6;
  const ITEM_HEIGHT = ITEM_WIDTH * 1.5;
  
@@ -146,8 +135,10 @@
    // }, [index]);
  
    return (
+     
     <View style={styles.viewback}>
 <ImageBackground source={ image } style={styles.background}>
+
      <FlingGestureHandler
        direction={Directions.LEFT}
        onHandlerStateChange={(e) => {
@@ -240,9 +231,10 @@
          </SafeAreaView>
        </FlingGestureHandler>
      </FlingGestureHandler>
+     
      </ImageBackground>
      </View>
-
+     
    );
  }
  
@@ -252,16 +244,19 @@
    container: {
      flex: 1,
      justifyContent: 'center',
-     
+    marginTop: 70,
    },
    title: {
      fontSize: 28,
      fontWeight: '900',
      textTransform: 'uppercase',
      letterSpacing: -1,
+     
    },
    location: {
      fontSize: 16,
+    
+
    },
    date: {
      fontSize: 12,

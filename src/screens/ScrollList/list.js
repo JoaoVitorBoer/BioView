@@ -11,6 +11,7 @@
    StyleSheet,
    SafeAreaView,
    ImageBackground,
+   Button,
  } from 'react-native';
  import {
    State,
@@ -35,6 +36,7 @@
      title: 'Árvores',
      location:'Campus PUCRS',
      
+     
      poster:
      'https://cdn.discordapp.com/attachments/757716647627849898/857699754007986236/unknown.png', //Arvore
      
@@ -49,6 +51,7 @@
    {
      title: 'Animais',
      location: 'Campus PUCRS',
+     
      
      poster:
      'https://cdn.discordapp.com/attachments/757716647627849898/857699803633811456/unknown.png' , //Pássaro
@@ -167,6 +170,7 @@
            <StatusBar hidden />
            <OverflowItems scrollX={scrollXAnimated} data={data} />
            <FlatList
+                                     
              data={data}
              keyExtractor={(_, index) => String(index)}
              scrollEnabled={false}
@@ -220,10 +224,13 @@
                      opacity,
                    }}
                  >
+                   
                    <Image
                      source={{ uri: item.poster }}
                      style={{ width: ITEM_WIDTH, height: ITEM_HEIGHT }}
+                                       
                    />
+                   
                  </Animated.View>
                );
              }}

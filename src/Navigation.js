@@ -61,11 +61,7 @@ export default function Navigation(){
         >
             
 
-          <Tab.Screen name="Mapa" component={MapaScreen} 
-          options={{
-              title: "Mapa"
-          }}
-        />
+         
           <Tab.Screen name="Home" component={HomeScreen} 
           options={{
             title: ""

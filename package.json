@@ -34,7 +34,8 @@
     "react-native-typescript-transformer": "^1.2.13",
     "react-native-web": "^0.16.5",
     "sequelize": "^6.6.2",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.0",
+    "expo-barcode-scanner": "~10.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

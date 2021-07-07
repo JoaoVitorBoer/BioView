@@ -1,9 +1,8 @@
 import React from 'react';
 import { BarCodeScanner } from 'expo-barcode-scanner';
-
 import { useState, useEffect } from 'react';
 import { View } from 'react-native';
-import {css} from '../../../assets/css/Css';
+import {css} from '../css/Css';
 
 export default function Qrcode(){
     const [hasPermission, setHasPermission] = useState(null);
@@ -25,6 +24,7 @@ export default function Qrcode(){
         setCode(data);
  
       };
+
       return (
         <View>
         <BarCodeScanner

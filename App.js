@@ -1,52 +1,27 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import { ImageBackground, StyleSheet, View } from "react-native";
-import Cards from './screens/card';
+import { NavigationContainer, View } from '@react-navigation/native';
 
+import Navigation from './src/Navigation';
+import Header from './src/screens/Home/header';
 
-const image = require('./Images/homepage.png');
-
-
-export default function App() {
-  return (
+export default function App(){
+    return(
+        
+        <NavigationContainer>                
+             <Navigation />
+         </NavigationContainer>
+        
      
- <ImageBackground source={ image } style={styles.image}>
-  <View style={styles.container}>
-    <Cards>  
-      
-      
-      
-    </Cards>
-  </View>
-</ImageBackground>
-);
+
+
+    
+    
+    );
 }
 
 
 
-
-
-
-
-
-
-
-
-
-const styles = StyleSheet.create({
-   container: {
-     flex: 1,
-     flexDirection: "column"
-   },
-   
-   image: {
-    flex: 1,
-    resizeMode: "cover",
-    justifyContent: "center"
-    
-    },
-
-         
-});
 
 
 

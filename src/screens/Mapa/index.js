@@ -1,28 +1,20 @@
 import React from 'react';
 import { View, ImageBackground, StyleSheet } from 'react-native';
-import Header from './header';
-import List from '../ScrollList/list'
+import Header from '../Home/header';
 
 
 
-
-
-const image = require('./Homepage.png');
+const image = require('./Map.png');
 
 export default function Home(){
     return (
-
-<List>  
-  <View style={style.viewback}> 
-     <ImageBackground source={ image } style={style.background}>
-       
-     </ImageBackground>  
+    
+ <ImageBackground source={ image } style={style.background}>
+   <View style={style.viewback}>    
+    <Header>                  
+    </Header>
   </View>
-</List>  
-  
-  
-
- 
+ </ImageBackground>
 
    
     );
@@ -40,12 +32,8 @@ const style = StyleSheet.create({
 
         flex: 1,
         flexDirection: "column",
-<<<<<<< HEAD
-        marginBottom: 2
-=======
         marginBottom: 1
 
->>>>>>> CardBranch
     
     },
     
@@ -62,3 +50,4 @@ const style = StyleSheet.create({
     
     });
     
+

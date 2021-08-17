@@ -59,23 +59,23 @@ export default function Navigation(){
         
         
         >
-             <Tab.Screen name="Mapa" component={MapaScreen} 
+            <Tab.Screen name="QrCode" component={QrcodeScreen}
           options={{
-              title: "Mapa"
-          }}
-        />
-
+            title: "QrCode"
+        }}
+         />
+            
          
           <Tab.Screen name="Home" component={HomeScreen} 
           options={{
             title: ""
         }}
         />
-          <Tab.Screen name="QrCode" component={QrcodeScreen}
+           <Tab.Screen name="Mapa" component={MapaScreen} 
           options={{
-            title: "QrCode"
-        }}
-         />
+              title: "Mapa"
+          }}
+        />
         </Tab.Navigator>
 
 

@@ -120,7 +120,7 @@
      scrollX.setValue(i);
    }, []);
  
-   // interconnected animations aka reactive animations :D
+  
    React.useEffect(() => {
      Animated.spring(scrollXAnimated, {
        toValue: scrollX,
@@ -128,14 +128,7 @@
      }).start();
    });
  
-   // React.useEffect(() => {
-   //   if (index === data.length - VISIBLE_ITEMS - 2) {
-   //     console.log('fetch more')
-   //     const newData = [...data, ...data];
- 
-   //     setData(newData);
-   //   }
-   // }, [index]);
+  
  
    return (
      

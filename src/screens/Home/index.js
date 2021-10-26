@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, ImageBackground, StyleSheet } from 'react-native';
 import Header from './header';
-import List from '../ScrollList/list'
 
 
 
